@@ -18,7 +18,11 @@ const product = new mongoose.Schema({
     city: {type:String,required:true},
     zip_code: {type:Number,required:true},
     country: {type:String,required:true},
-    auction_id: {type:mongoose.Schema.Types.ObjectId}
+    product_files: [{
+        file_name: {type:String,required:true}, 
+        file_type: {type:String,required:true}
+    }],
+    // auction_id: {type:mongoose.Schema.Types.ObjectId}
 })
 
 
