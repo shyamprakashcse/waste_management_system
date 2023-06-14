@@ -70,6 +70,7 @@ const  addProduct = async (req,res,next)=>{
     zip_code: req.body.zip_code,
     country: req.body.country,
     product_files: product_files,
+    
     // auction_id: mongoose.Schema.Types.ObjectId
    })
   

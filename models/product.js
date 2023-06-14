@@ -22,8 +22,9 @@ const product = new mongoose.Schema({
         file_name: {type:String,required:true}, 
         file_type: {type:String,required:true}
     }],
+    product_status : {type:String,required:true}
     // auction_id: {type:mongoose.Schema.Types.ObjectId}
 })
 
 
-module.exports=Product=mongoose.model("Product",product)
+module.exports= Product=mongoose.model("Product",product)
